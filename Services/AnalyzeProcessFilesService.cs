@@ -133,7 +133,7 @@ internal class AnalyzeProcessFilesService
             if (GlobalFunctions.ContainsIgnoreAccents(line, "Deposito exitoso"))
                 currentRecord.SuccessfulDepositsCount++;
 
-            if (GlobalFunctions.ContainsIgnoreAccents(line, "Almacenaje"))
+            if (GlobalFunctions.ContainsIgnoreAccents(line, "CONTANDO") || GlobalFunctions.ContainsIgnoreAccents(line, "Almacenaje"))
                 currentRecord.StoringCount++;
 
             if (GlobalFunctions.ContainsIgnoreAccents(line, "Deposito enviado a CIRREON con exito"))
